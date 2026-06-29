@@ -5,92 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UnDistorted — Privacy Policy</title>
   <meta name="description" content="Privacy policy for the UnDistorted app. The app collects nothing; everything stays on your device.">
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: light dark; }
+    :root {
+      --bg-top: #111921;
+      --bg: #070E15;
+      --bg-deep: #03070C;
+      --surface: #111820;
+      --border: #2A343D;
+      --ink: #F4F1EA;
+      --ink-2: #D8D2C8;
+      --ink-3: #B6AFA4;
+      --muted: #888376;
+      --gold: #DDBE83;
+      --green-link: #6CA982;
+      --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+      --sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 2.5rem 1.25rem 4rem;
-      color: #1c1c1e;
-      background: #ffffff;
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--sans);
+      color: var(--ink-2);
+      line-height: 1.7;
+      background:
+        radial-gradient(130% 90% at 50% -10%, rgba(79,138,111,0.13), transparent 55%),
+        linear-gradient(180deg, var(--bg-top) 0%, var(--bg) 42%, var(--bg-deep) 100%);
+      background-attachment: fixed;
     }
-    @media (prefers-color-scheme: dark) {
-      body { color: #e8e8ea; background: #0f1115; }
-      a { color: #8fb7ff; }
-      .meta { color: #9a9aa2; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 3.25rem 1.25rem 4rem; }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin: 0 0 0.6rem;
     }
-    h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
-    h2 { font-size: 1.15rem; margin-top: 2rem; }
-    .meta { color: #6a6a70; font-size: 0.9rem; margin-top: 0; }
-    .lede { font-size: 1.05rem; }
-    ul { padding-left: 1.25rem; }
-    li { margin-bottom: 0.4rem; }
-    a { color: #2a5db0; }
-    footer { margin-top: 3rem; font-size: 0.85rem; color: #6a6a70; }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      color: var(--ink);
+      font-size: 2.4rem;
+      line-height: 1.1;
+      margin: 0 0 0.5rem;
+    }
+    .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+
+    .divider { height: 1px; background: var(--border); border: 0; margin: 1.75rem 0; }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem 1.6rem 0.75rem;
+    }
+
+    .lede { font-size: 1.1rem; color: var(--ink-2); margin-top: 0; }
+
+    h2 {
+      font-family: var(--serif);
+      font-weight: 500;
+      color: var(--ink);
+      font-size: 1.4rem;
+      margin: 2rem 0 0.5rem;
+    }
+    p { margin: 0 0 1rem; }
+    ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+    li { margin-bottom: 0.5rem; }
+    li::marker { color: var(--gold); }
+    a { color: var(--green-link); text-decoration: none; border-bottom: 1px solid rgba(108,169,130,0.35); }
+    a:hover { border-bottom-color: var(--green-link); }
+
+    footer {
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>UnDistorted — Privacy Policy</h1>
-  <p class="meta">Published by Fledgewright · Effective date: [set at publication]</p>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">UnDistorted</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Published by Fledgewright · Effective date: [set at publication]</p>
+    </header>
 
-  <p class="lede">UnDistorted (&ldquo;the app&rdquo;) is a personal cognitive-distortion training program. This policy explains how the app handles your information. In short: the app keeps everything on your device and sends nothing to us or anyone else.</p>
+    <hr class="divider">
 
-  <h2>Who is responsible</h2>
-  <p>UnDistorted is published by Fledgewright. If you have questions about this policy or your data, email <a href="mailto:hello@fledgewright.com">hello@fledgewright.com</a>.</p>
+    <main class="panel">
+      <p class="lede">UnDistorted (&ldquo;the app&rdquo;) is a personal cognitive-distortion training program. This policy explains how the app handles your information. In short: the app keeps everything on your device and sends nothing to us or anyone else.</p>
 
-  <h2>The short version</h2>
-  <ul>
-    <li>The app does not collect, transmit, or sell any personal data.</li>
-    <li>Everything you enter stays on your device.</li>
-    <li>There are no accounts, no logins, no analytics, no advertising, and no third-party tracking.</li>
-    <li>You can export or erase your data at any time from within the app.</li>
-  </ul>
+      <h2>Who is responsible</h2>
+      <p>UnDistorted is published by Fledgewright. If you have questions about this policy or your data, email <a href="mailto:hello@fledgewright.com">hello@fledgewright.com</a>.</p>
 
-  <h2>What the app stores, and where</h2>
-  <p>Everything you do in the app — your weekly check-ins, daily stem entries, journal entries, quick logs, program progress, and settings — is stored locally on your device using on-device storage. This information never leaves your device unless you choose to export it yourself (see &ldquo;Backups&rdquo;). We operate no servers and have no ability to see, access, or retrieve your information.</p>
+      <h2>The short version</h2>
+      <ul>
+        <li>The app does not collect, transmit, or sell any personal data.</li>
+        <li>Everything you enter stays on your device.</li>
+        <li>There are no accounts, no logins, no analytics, no advertising, and no third-party tracking.</li>
+        <li>You can export or erase your data at any time from within the app.</li>
+      </ul>
 
-  <h2>What the app does not do</h2>
-  <ul>
-    <li>It does not create an account or require you to sign in.</li>
-    <li>It does not use analytics or crash-reporting services.</li>
-    <li>It does not display advertising or use advertising identifiers.</li>
-    <li>It does not include third-party tracking or social-media components.</li>
-    <li>It does not transmit your entries, scores, or usage to any server.</li>
-  </ul>
+      <h2>What the app stores, and where</h2>
+      <p>Everything you do in the app — your weekly check-ins, daily stem entries, journal entries, quick logs, program progress, and settings — is stored locally on your device using on-device storage. This information never leaves your device unless you choose to export it yourself (see &ldquo;Backups&rdquo;). We operate no servers and have no ability to see, access, or retrieve your information.</p>
 
-  <h2>Notifications</h2>
-  <p>If you turn on reminders, the app schedules them locally on your device. No reminder data is sent anywhere, and the app does not use internet-delivered push notifications.</p>
+      <h2>What the app does not do</h2>
+      <ul>
+        <li>It does not create an account or require you to sign in.</li>
+        <li>It does not use analytics or crash-reporting services.</li>
+        <li>It does not display advertising or use advertising identifiers.</li>
+        <li>It does not include third-party tracking or social-media components.</li>
+        <li>It does not transmit your entries, scores, or usage to any server.</li>
+      </ul>
 
-  <h2>Biometric unlock and passcode</h2>
-  <ul>
-    <li>Biometric checks (such as fingerprint or face unlock) are handled entirely by your device&rsquo;s operating system. The app never receives, sees, or stores your biometric data.</li>
-    <li>Your passcode is stored only on your device in a protected form and is never transmitted.</li>
-  </ul>
+      <h2>Notifications</h2>
+      <p>If you turn on reminders, the app schedules them locally on your device. No reminder data is sent anywhere, and the app does not use internet-delivered push notifications.</p>
 
-  <h2>Backups</h2>
-  <p>You can export a backup file from Data Management. The file is created only at your request and saved wherever you choose. If you have set a passcode, the backup is encrypted. The app does not upload backups anywhere — you control the file. Importing a backup reads a file you select.</p>
+      <h2>Biometric unlock and passcode</h2>
+      <ul>
+        <li>Biometric checks (such as fingerprint or face unlock) are handled entirely by your device&rsquo;s operating system. The app never receives, sees, or stores your biometric data.</li>
+        <li>Your passcode is stored only on your device in a protected form and is never transmitted.</li>
+      </ul>
 
-  <h2>Crisis resources</h2>
-  <p>If a check-in suggests you may be struggling, the app may show optional links to crisis-support resources. Choosing one opens your phone&rsquo;s dialer, your messaging app, or an external website (for example, a helpline directory). Those services are run by third parties with their own privacy practices. The app sends them no information about you; it simply opens the contact method you tap.</p>
+      <h2>Backups</h2>
+      <p>You can export a backup file from Data Management. The file is created only at your request and saved wherever you choose. If you have set a passcode, the backup is encrypted. The app does not upload backups anywhere — you control the file. Importing a backup reads a file you select.</p>
 
-  <h2>Your control over your data</h2>
-  <p>Because all data is stored only on your device, you are always in control of it:</p>
-  <ul>
-    <li>Export: save a copy at any time from Data Management.</li>
-    <li>Delete: erase everything from Data Management, Reset App, or by uninstalling the app. Deletion is immediate and permanent.</li>
-  </ul>
+      <h2>Crisis resources</h2>
+      <p>If a check-in suggests you may be struggling, the app may show optional links to crisis-support resources. Choosing one opens your phone&rsquo;s dialer, your messaging app, or an external website (for example, a helpline directory). Those services are run by third parties with their own privacy practices. The app sends them no information about you; it simply opens the contact method you tap.</p>
 
-  <h2>Children</h2>
-  <p>UnDistorted is intended for adults and is not directed to children. The app does not knowingly collect information from anyone, including children.</p>
+      <h2>Your control over your data</h2>
+      <p>Because all data is stored only on your device, you are always in control of it:</p>
+      <ul>
+        <li>Export: save a copy at any time from Data Management.</li>
+        <li>Delete: erase everything from Data Management, Reset App, or by uninstalling the app. Deletion is immediate and permanent.</li>
+      </ul>
 
-  <h2>Changes to this policy</h2>
-  <p>If this policy changes, the updated version will be posted with a new effective date, both here and in the app.</p>
+      <h2>Children</h2>
+      <p>UnDistorted is intended for adults and is not directed to children. The app does not knowingly collect information from anyone, including children.</p>
 
-  <h2>Contact</h2>
-  <p>Questions? Email Fledgewright at <a href="mailto:hello@fledgewright.com">hello@fledgewright.com</a>.</p>
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be posted with a new effective date, both here and in the app.</p>
 
-  <footer>© Fledgewright. This page mirrors the privacy policy bundled inside the UnDistorted app.</footer>
+      <h2>Contact</h2>
+      <p>Questions? Email Fledgewright at <a href="mailto:hello@fledgewright.com">hello@fledgewright.com</a>.</p>
+    </main>
+
+    <footer>© Fledgewright · This page mirrors the privacy policy bundled inside the UnDistorted app.</footer>
+  </div>
 </body>
 </html>
