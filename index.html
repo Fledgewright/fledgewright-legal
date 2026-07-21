@@ -1,33 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+  legal.fledgewright.com — the hub index.
+
+  Wears the fledgewright.com chrome rather than any one app's look: this is a
+  Fledgewright surface, and once a second app is listed a hub in UnDistorted's
+  palette would be wearing the wrong app's clothes. The per-app documents below
+  keep their own app's design.
+
+  Styles, fonts and wordmarks are loaded from fledgewright.com, which serves
+  them with `Access-Control-Allow-Origin: *`, so the brand stays in sync here
+  automatically instead of being copied and left to drift. Every link and asset
+  is absolute for that reason: this page is on a different origin, so a relative
+  "/about/" would resolve against the legal subdomain and 404.
+
+  The document pages under /undistorted/ deliberately do NOT do this. They are
+  pinned in store listings and must never depend on another origin to render.
+-->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fledgewright — Legal</title>
-  <meta name="description" content="Legal and privacy documents for Fledgewright apps.">
-  <style>
-    :root { color-scheme: light dark; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6; max-width: 640px; margin: 0 auto; padding: 3rem 1.25rem 4rem;
-      color: #1c1c1e; background: #ffffff;
-    }
-    @media (prefers-color-scheme: dark) { body { color: #e8e8ea; background: #0f1115; } a { color: #8fb7ff; } }
-    h1 { font-weight: 500; font-size: 1.6rem; }
-    h2 { font-size: 1.05rem; margin-top: 2rem; }
-    ul { list-style: none; padding-left: 0; }
-    li { margin-bottom: 0.5rem; }
-    a { color: #2a5db0; }
-    .meta { color: #6a6a70; font-size: 0.9rem; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>App Legal Documents — Fledgewright</title>
+<meta name="description" content="Privacy policies and terms for Fledgewright apps.">
+<link rel="stylesheet" href="https://fledgewright.com/styles.css">
+<link rel="icon" href="https://fledgewright.com/favicon.ico" sizes="48x48">
+<link rel="icon" href="https://fledgewright.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://fledgewright.com/apple-touch-icon.png">
+<link rel="canonical" href="https://legal.fledgewright.com/">
+<meta name="theme-color" content="#0E2337">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fledgewright">
+<meta property="og:title" content="App Legal Documents — Fledgewright">
+<meta property="og:description" content="Privacy policies and terms for Fledgewright apps.">
+<meta property="og:url" content="https://legal.fledgewright.com/">
+<meta property="og:image" content="https://fledgewright.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  /* The only additions to the site stylesheet: the document rows. Built from
+     the site's own tokens so they inherit any future palette change. */
+  .doc-list { list-style: none; padding: 0; margin: 0 0 1.6rem; }
+  .doc-list li { margin: 0 0 .75rem; }
+  .doc-list li:last-child { margin-bottom: 0; }
+  a.doc {
+    display: block;
+    padding: .95rem 1.15rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--tx);
+    transition: border-color 140ms ease, background 140ms ease;
+  }
+  a.doc:hover { border-color: var(--accent); background: rgba(233,239,238,.04); opacity: 1; }
+  a.doc .name { font-weight: 700; }
+  a.doc .desc { display: block; color: var(--soft); font-size: .95rem; line-height: 1.6; }
+  a.doc .chev { float: right; color: var(--accent); }
+  .app-block { margin-bottom: 2.6rem; }
+  .app-block:last-child { margin-bottom: 0; }
+</style>
 </head>
-<body>
-  <h1>Fledgewright — Legal</h1>
-  <p class="meta">Privacy policies and legal documents for Fledgewright apps.</p>
+<body class="inner">
+  <div id="sky" aria-hidden="true">
+    <div class="sky-layer sky-far"></div>
+    <div class="sky-layer sky-near"></div>
+  </div>
+  <div id="reading-column" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap head-in">
+      <a class="brand" href="https://fledgewright.com/" aria-label="Fledgewright home">
+        <img class="only-dark" src="https://fledgewright.com/assets/img/Fledgewright_wordmark_sky_reversed.svg" alt="Fledgewright">
+        <img class="only-light" src="https://fledgewright.com/assets/img/Fledgewright_wordmark_sky_primary.svg" alt="Fledgewright">
+        <span class="brand-tagline">Software built to be outgrown</span>
+      </a>
+      <nav aria-label="Site">
+        <a href="https://fledgewright.com/about/">About</a>
+        <a href="https://fledgewright.com/apps/">Apps</a>
+        <a href="https://fledgewright.com/commissions/">Commissions</a>
+        <a href="https://fledgewright.com/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>UnDistorted</h2>
-  <ul>
-    <li><a href="/undistorted/privacy">Privacy Policy</a></li>
-  </ul>
+  <main id="main">
+    <div class="wrap page-head">
+      <h1 class="page-title">App Legal Documents</h1>
+    </div>
+
+    <div class="wrap">
+      <div class="prose">
+        <p class="mail">Each app keeps its own privacy policy and terms, in the app's own words. They are mirrored here, and bundled offline inside the app itself.</p>
+
+        <p>Looking for this site's own privacy policy or terms? Those live at <a href="https://fledgewright.com/privacy/">fledgewright.com/privacy</a> and <a href="https://fledgewright.com/terms/">fledgewright.com/terms</a>.</p>
+
+        <div class="app-block">
+          <h2>UnDistorted</h2>
+          <p>A finite 12-week cognitive distortion training program.</p>
+          <ul class="doc-list">
+            <li>
+              <a class="doc" href="/undistorted/privacy">
+                <span class="chev">&rsaquo;</span>
+                <span class="name">Privacy Policy</span>
+                <span class="desc">What the app stores, and why none of it leaves your device.</span>
+              </a>
+            </li>
+            <li>
+              <a class="doc" href="/undistorted/terms">
+                <span class="chev">&rsaquo;</span>
+                <span class="name">Terms of Use</span>
+                <span class="desc">What the program is, what it can bring up, and what you are agreeing to.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-in">
+      <img class="only-dark" src="https://fledgewright.com/assets/img/Fledgewright_wordmark_sky_mono-cloud.svg" alt="Fledgewright">
+      <img class="only-light" src="https://fledgewright.com/assets/img/Fledgewright_wordmark_sky_mono-ink.svg" alt="Fledgewright">
+      <div class="foot-links">
+        <a href="mailto:hello@fledgewright.com">hello@fledgewright.com</a>
+        <a href="https://fledgewright.com/">fledgewright.com</a>
+        <a href="https://fledgewright.com/privacy/">Site Privacy</a>
+        <a href="https://fledgewright.com/terms/">Site Terms</a>
+      </div>
+    </div>
+    <div class="wrap foot-note">© 2026 Fledgewright LLC</div>
+  </footer>
 </body>
 </html>
